@@ -18,12 +18,9 @@ public class Bread extends ProductForSale{
     }
 
     @Override
-    public void showDetails(ProductForSale product) {
-        if (product instanceof Bread) {
-            Bread product1 = (Bread) product;
-            System.out.println("Product type: " + product1.getType() + " Product price: " + product1.getPrice() +
-                    " Product description : " + product1.getDescription() + " Is Bread Gluten-Free? :" + product1.isGlutenFree());
-        }
+    public void showDetails() {
+        System.out.println("Product type: " + getType() + " Product price: " + getPrice() +
+                " Product description: " + getDescription() + " Is Bread Gluten-Free?: " + isGlutenFree());
     }
 
 

@@ -2,8 +2,9 @@ import org.example.model.Bread;
 import org.example.model.Chocolate;
 import org.example.model.Coke;
 import org.example.model.ProductForSale;
-import org.example.rpg.Monster;
-import org.example.rpg.Troll;
+import org.example.model.rpg.Monster;
+import org.example.model.rpg.Troll;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

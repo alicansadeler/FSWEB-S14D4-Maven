@@ -27,7 +27,7 @@ public abstract class ProductForSale {
         return description;
     }
 
-    public abstract void showDetails(ProductForSale product);
+    public abstract void showDetails();
 
 
 }

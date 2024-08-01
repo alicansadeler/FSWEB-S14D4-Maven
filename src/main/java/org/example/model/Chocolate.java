@@ -27,12 +27,10 @@ public class Chocolate extends ProductForSale {
     }
 
     @Override
-    public void showDetails(ProductForSale product) {
-        if (product instanceof Chocolate) {
-            Chocolate product1 = (Chocolate) product;
-            System.out.println("Product type: " + product1.getType() + " Product price: " + product1.getPrice() +
-                    " Product description: " + product1.getDescription() + " Chocolate brand: " + product1.getBrand() + " Is chocolate bitter?: " + product1.isBitter());
-        }
+    public void showDetails() {
+        System.out.println("Product type: " + getType() + " Product price: " + getPrice() +
+                " Product description: " + getDescription() + " Chocolate brand: " + getBrand() +
+                " Is chocolate bitter?: " + isBitter());
     }
 
 }

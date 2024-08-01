@@ -19,11 +19,8 @@ public class Coke extends ProductForSale{
     }
 
     @Override
-    public void showDetails(ProductForSale product) {
-        if (product instanceof Coke) {
-            Coke product1 = (Coke) product;
-            System.out.println("Product type: " + product1.getType() + " Product price: " + product1.getPrice() +
-                    " Product description : " + product1.getDescription() + " Is Coke Diet? :" + product1.isDiet());
-        }
+    public void showDetails() {
+        System.out.println("Product type: " + getType() + " Product price: " + getPrice() +
+                " Product description: " + getDescription() + " Is Coke Diet?: " + isDiet());
     }
 }
